@@ -1,0 +1,129 @@
+"""HTML"""
+
+Sirve para estructurar una página web.
+
+¿Cuál es la estructura básica (elementos principales) de un archivo html?
+Se compone de elementos. Con excepciones, los elementos llevan opening y closing tag.
+-<!DOCTYPE html>
+-<html></html>
+-<head></head>
+<title></title>
+-<body></body>
+<h1></h1>
+<p></p>
+
+¿Cómo vinculas tu html con tu js? ¿Qué convenciones debes seguir al hacer esto? ¿Por qué?
+1) Utilizando el elemento script y escribir el código JS ahí.
+2) Si el código es muy extenso, hacer el codigo JS en otro archivo y linkearlo por medio de script src.
+
+¿Por qué se dice que el html es anidado? Haz un dibujo
+Porque las etiquetas pueden "guardar" otros elementos, dependiendo de su jerarquía. Por ejemplo, en el body, se pueden encontrar
+elementos como encabezados y luego debajo de éstos, podemos encontrar párrafos.
+
+Piensa en un par de ejemplos de buenas prácticas de código html
+Utilizar las etiquetas de inicio y de cierre.
+Identar el código correctamente para entender qué va anidado dentro de qué.
+Utilizar comentarios para mayor legibilidad.
+
+HTML5
+
+¿Qué es HTML5?
+¿Para qué nos ayuda la semántica de HTML5?
+Para describir con mayor precisión cuál es el contenido de un documento de HTML.
+
+¿Cuáles son las nuevas etiquetas de HTML5 más comunes?
+<header> <nav>
+<section>
+<main><figure>
+<aside>
+<article>
+<footer>
+
+<em></em> énfasis o cursiva
+<strong></strong> negrita
+elementos inline (no crean una nueva línea)
+elementos block (crean una nueva línea)
+Encabezados para títulos y subtítulos (tip: headings) <h1> hasta <h6>. block.
+Un link <a href> inline
+Una tabla <table> <tr>block <th>inline <td>inline tags
+Una lista <ul> <li> or <ol> type= you choose
+Una imagen <img src>
+Una línea divisoria (tip: horizontal rule)<hr>
+Una cita <q> <blockquote>
+Resaltar un texto (tip: mark) <mark>
+target="_blank" atributo que muestra algo en una nueva pestaña
+style= atributo que permite darle estilos a un elemento; display: none, oculta un elemento
+<br> line break. elemento vacío para poemas o direcciones.
+<!-- comment. -->
+<div> crear secciones enteras que tienen un orden lógico.
+<span> sólo ciertas palabras de texto tengan un estilo diferente.
+
+¿Cuáles son etiquetas para crear un formulario?
+<form>
+<label>
+<input type=name ; radio; checkbox>
+<select> <option>
+<button>
+
+"""
+
+"""CSS"""
+Sirve para darle estilo al html.
+Se puede agregar inline, en el head o como stylesheet externo (quizá lo más recomendado) por medio de la etiqueta <link rel= href=>
+
+¿Qué significa que css es en "cascada"? ¿Por qué es útil? Haz un dibujo
+Que gobierna cómo interactúan los estilos y qué estilos tienen preferencia cuando existe un conflicto.
+
+¿Cómo funciona la herencia en css? Haz un dibujo
+El proceso por el cual algunas declaraciones de CSS aplicada a un elemento pasan de forma automática a los elementos que se encuentran anidados.
+
+Selector universal *{} selecciona todos los elementos de la página.
+Selector de elementos (de tipo o etiqueta) p{} seleccina los elementos cuya etiqueta html coincide con el valor del selector.
+Selectores de clases al atributo html class de cualquier elemento <p class=> para sólo ese elemento de la página, aunque pueden haber varios.
+Selectores ID al atributo id es más específico para un elemento porque sólo puede haber un id por página. # o p#
+Selector descendiente selecciona los elementos que se encuentran dentro de otros elementos, i.e.: pspan {} todos los elementos <span> dentro de un elemento <p>
+Selector hijo 
+Selectores de atributo
+Pseudo selectores
+
+También se pueden combinar selectores básicos como el de elementos con id o clase.
+
+¿Qué orden prevalece para asignar un estilo? ¿el último? ¿el primero?
+
+¿Qué significa que un selector es más específico que otro? Dame un ejemplo
+¿Se aplica el estilo con mayor o menor especificidad?
+¿Cómo se calcula la especificidad?
+¿Qué significa !important? ¿Por qué NO debemos usarlo a menos que sea estrictamente necesario?
+¿Todos los estilos en CSS se heredan? ¿Por qué?
+¿Qué es y para qué sirve inherit?
+
+¿Qué significa que un elemento css se comporte como block? ¿Y como inline? Dame un par de ejemplos
+Como block, que crea una nueva línea. Inline, que no crea una nueva línea.
+En CSS, que afecta a todo un block. Inline, que afecta sólo a una línea.
+
+Pensando en la analogía de construir un edificio, ¿qué representa el html y qué representa el css?
+El html sería el esqueleto del edificio y el CSS los colores de las paredes, los tipos de puerta y ventanas, etc.
+
+¿Para qué sirve el atributo style de los elementos html? ¿Cuál es la forma correcta de usarlo?
+Darle estilos a nuestros elementos html.
+Tengo una propiedad y un valor, seguido de punto y coma.
+
+¿Qué es un selector? ¿Qué es un pseudo-selector?
+Le indica al navegador a qué elemento/s de una web debe aplicar cierto estilo.
+
+¿Qué es box-sizing y para qué se usa?
+
+Dibuja el modelo de la caja y explícalo
+
+¿Cómo es el flujo normal de un documento? ¿Cómo cambiamos ese flujo?
+
+¿Para qué funciona positioning? ¿En qué se asemeja a float? ¿En qué se diferencia?
+
+¿Qué tiene que ver clear y clearfix con float?
+
+¿Por qué clearfix se considera un "hack"? ¿Para qué sirve? ¿Cómo se usa?
+
+¿Qué es colapso de margen? Explícalo con un ejemplo y un dibujo
+
+
+"""
