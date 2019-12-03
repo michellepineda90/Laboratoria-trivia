@@ -12,14 +12,14 @@
 </head>
 
 <body>
-    <div id="contenedor1" class="ocultar">
+    <div id="bienvenida" class="ocultar">
         <h1>¡Bienvenidx a Trivia Geográfica!</h1>
         <p>Averigüemos qué tan buenx eres en geografía...</p>
         <input type="name" id="name" placeholder="Escribe tu nombre aquí" name="name" required/>
         <button onclick="siguiente()">Empezar</button>
     </div>
 
-    <div id="contenedor2">
+    <div id="elige">
         <h1 id="saludo"></h1>
         <img src="img/turistas.jpg">
         <p>Elige un camino...</p>
@@ -29,37 +29,37 @@
 
     <div id="preguntasAmerica">
         <h1>¿Cuál es la capital de Argentina?</h1>
-        <p></p>
         <select id="Argentina">
             <option disabled selected>Selecciona una opción</option>
-            <option id="Salta">Salta</option>
             <option id="BuenosAires">Buenos Aires</option>
-            <option id="Montevideo">Montevideo</option>
-            <option id="Santiago">Santiago</option>
+            <option id="Montevideo">Mendoza</option>
+            <option id="Santiago">Córdoba</option>
         </select>
 
-        <!-- <h1>¿Cuál es la capital de El Salvador?</h1>
-        <button>Managua</button>
-        <button>Lima</button>
-        <button>Mendoza</button>
-        <button>San Salvador</button>
-    
+        <h1>¿Cuál es la capital de El Salvador?</h1>
+        <select id="El Salvador">
+            <option disabled selected>Selecciona una opción</option> 
+            <option>Santa Ana</option>
+            <option>San Miguel</option>
+            <option>San Salvador</option>
+        </select>
+
         <h1>¿Cuál es la capital de Canadá?</h1>
-        <button>Ontario</button>
-        <button>Québec</button>
-        <button>Toronto</button>
-        <button>Ottawa</button> -->
+        <select id="Canadá">
+            <option disabled selected>Selecciona una opción</option>
+            <option>Ontario</option>
+            <option>Ottawa</option>
+            <option>Toronto</option>
+        </select>
 
     </div>
 
     <div id="preguntasEuropa">
         <h1>¿Cuál es la capital de Alemania?</h1>
-        <p></p>
         <select>
                 <option>Kreuzberg</option>
                 <option>Düsseldorf</option>
                 <option>Berlin</option>
-                <option>Potsdam</option>
         </select>
     </div>
 
@@ -68,11 +68,11 @@
     </div>
 
     <div id="resultados">
-        <h1>¡Felicidades!</h1>
-        <h2>Tus resultados son:</h2>
-        <p> % correctas</p>
+        <h1 id="despedida"></h1>
+        <h2>Tus puntaje es:</h2>
+        <p id="puntaje"></p>
 
-        <button>¿Quieres volver a empezar?</button>
+        <button>¿Quieres intentarlo de nuevo?</button>
     </div>
 
     <script src="app.js"></script>
