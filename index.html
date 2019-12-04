@@ -20,7 +20,7 @@
     </div>
 
     <div id="elige">
-        <h1 id="saludo"></h1>
+        <h2 id="saludo"></h2>
         <img src="img/turistas.jpg">
         <p>Elige un camino...</p>
         <button id="america" onclick="escogerAmerica()">Capitales de América</button>
@@ -28,43 +28,44 @@
     </div>
 
     <div id="preguntasAmerica">
-        <h1>¿Cuál es la capital de Argentina?</h1>
-        <select id="Argentina">
-            <option disabled selected>Selecciona una opción</option>
-            <option id="BuenosAires">Buenos Aires</option>
-            <option id="Montevideo">Mendoza</option>
-            <option id="Santiago">Córdoba</option>
+        <h3>¿Cuál es la capital de Argentina?</h3>
+        <select id="argentina">
+                <option disabled selected>Selecciona una opción</option>
+                <option value="buenosaires">Buenos Aires</option>
+                <option value="mendoza">Mendoza</option>
+                <option value="cordoba">Córdoba</option>
         </select>
 
-        <h1>¿Cuál es la capital de El Salvador?</h1>
-        <select id="El Salvador">
+        <h3>¿Cuál es la capital de El Salvador?</h3>
+        <select id="elsalvador">
             <option disabled selected>Selecciona una opción</option> 
-            <option>Santa Ana</option>
-            <option>San Miguel</option>
-            <option>San Salvador</option>
+            <option value="santaana">Santa Ana</option>
+            <option value="sanmiguel">San Miguel</option>
+            <option value ="sansalvador">San Salvador</option>
         </select>
 
-        <h1>¿Cuál es la capital de Canadá?</h1>
-        <select id="Canadá">
+        <h3>¿Cuál es la capital de Canadá?</h3>
+        <select id="canada">
             <option disabled selected>Selecciona una opción</option>
-            <option>Ontario</option>
-            <option>Ottawa</option>
-            <option>Toronto</option>
+            <option value="ontario">Ontario</option>
+            <option value="ottawa">Ottawa</option>
+            <option value="toronto">Toronto</option>
         </select>
-
     </div>
 
     <div id="preguntasEuropa">
-        <h1>¿Cuál es la capital de Alemania?</h1>
+        <h3>¿Cuál es la capital de Alemania?</h3>
         <select>
-                <option>Kreuzberg</option>
-                <option>Düsseldorf</option>
-                <option>Berlin</option>
+            <option>Kreuzberg</option>
+            <option>Düsseldorf</option>
+            <option>Berlin</option>
         </select>
     </div>
 
+    <br>
+
     <div id="enviarRespuestas">
-        <button id="enviar" onclick="resultadosFinales()">Enviar mis respuestas</button>
+        <button id="enviar" onclick="resultado()">Enviar mis respuestas</button>
     </div>
 
     <div id="resultados">
