@@ -1,3 +1,4 @@
+// Display de página de inicio y obtención de datos del HTML
 const bienvenida = document.getElementById('bienvenida');
 bienvenida.style.display = 'block';
 const elige = document.getElementById('elige');
@@ -15,6 +16,7 @@ const resultados = document.getElementById('resultados');
 resultados.style.display = 'none';
 
 function siguiente() {
+    // Pasa de la página de inicio a página de saludo y elección
     const name = document.getElementById('name').value;
     const saludo = document.getElementById('saludo');
     saludo.innerHTML = '¡Hola, ' + name + '!';
@@ -23,6 +25,7 @@ function siguiente() {
 }
 
 function escogerAmerica() {
+    // Pasa a la página de preguntas sobre América
     elige.style.display = 'none';
     preguntasAmerica.style.display = 'block';
     preguntasEuropa.style.display = 'none';
@@ -30,6 +33,7 @@ function escogerAmerica() {
 }
 
 function escogerEuropa() {
+    // Pasa a la página de preguntas sobre Europa
     elige.style.display = 'none';
     preguntasAmerica.style.display = 'none';
     preguntasEuropa.style.display = 'block';
@@ -37,6 +41,7 @@ function escogerEuropa() {
 }
 
 function resultadoAmerica() {
+    // Obtiene el puntaje de las preguntas sobre América
     const resultadosAmerica = [];
     let numCorrect = 0;
     resultadosAmerica.push(pregAmericaUno.value);
@@ -56,6 +61,31 @@ function resultadoAmerica() {
 }
 
 function reiniciar() {
+    // Reinicia el juego
     bienvenida.style.display = 'block';
     resultados.style.display = 'none';
 }
+
+// function resultadoEuropa() {
+//     const resultadosAmerica = [];
+//     let numCorrect = 0;
+//     resultadosAmerica.push(pregAmericaUno.value);
+//     resultadosAmerica.push(pregAmericaDos.value);
+//     resultadosAmerica.push(pregAmericaTres.value);
+
+//     for (index = 0; index < resultadosAmerica.length; index++) {
+//         if (resultadosAmerica[index] == "correct") {
+//             numCorrect++;
+//             console.log(numCorrect)
+//         };
+//     }
+//     enviarRespuestas.style.display = 'none';
+//     preguntasAmerica.style.display = 'none';
+//     resultados.style.display = 'block';
+//     puntaje.innerHTML = numCorrect
+// }
+
+// function reiniciar() {
+//     bienvenida.style.display = 'block';
+//     resultados.style.display = 'none';
+// }

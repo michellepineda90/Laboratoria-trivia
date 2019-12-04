@@ -13,12 +13,16 @@
 </head>
 
 <body>
+
+    <!-- Página de bienvenida -->
     <div id="bienvenida" class="ocultar">
         <h1>¡Bienvenidx a Trivia Geográfica!</h1>
         <p>Averigüemos qué tan buenx eres en geografía...</p>
         <input type="name" id="name" placeholder="Escribe tu nombre aquí" name="name" required/>
         <button onclick="siguiente()">Empezar</button>
     </div>
+
+    <!-- Página de elección -->
 
     <div id="elige">
         <h2 id="saludo"></h2>
@@ -27,6 +31,8 @@
         <button id="america" onclick="escogerAmerica()">Capitales de América</button>
         <button id="europa" onclick="escogerEuropa()">Capitales de Europa</button>
     </div>
+
+    <!-- Página de preguntas América -->
 
     <div id="preguntasAmerica">
         <h3>¿Cuál es la capital de Argentina?</h3>
@@ -53,7 +59,7 @@
             <option value="toronto">Toronto</option>
         </select>
 
-        <br>
+        <br/>
 
         <div id="enviarRespuestasAmerica">
             <button id="enviar" onclick="resultadoAmerica()">Enviar mis respuestas</button>
@@ -61,21 +67,43 @@
 
     </div>
 
+
+    <!-- Página de preguntas Europa -->
+
     <div id="preguntasEuropa">
         <h3>¿Cuál es la capital de Alemania?</h3>
-        <select>
-            <option>Kreuzberg</option>
-            <option>Düsseldorf</option>
-            <option>Berlin</option>
+        <select id="alemania">
+            <option disabled selected>Selecciona una opción</option>
+            <option id="kreuzberg">Kreuzberg</option>
+            <option id="dusseldorf">Düsseldorf</option>
+            <option id="correct">Berlín</option>
         </select>
 
-        <!-- <br>
+        <h3>¿Cuál es la capital de Suecia?</h3>
+        <select id="suecia">
+            <option disabled selected>Selecciona una opción</option>
+            <option id="malmo">Malmö</option>
+            <option id="correct">Estocolmo</option>
+            <option id="gothenburg">Gothenburg</option>
+        </select>
+
+        <h3>¿Cuál es la capital de Francia?</h3>
+        <select id="francia">
+            <option disabled selected>Selecciona una opción</option>
+            <option id="correct">París</option>
+            <option id="lyon">Lyon</option>
+            <option id="marsella">Marsella</option>
+        </select>
+
+        <br/>
 
         <div id="enviarRespuestasAmerica">
-            <button type="reset" id="enviar" onclick="resultadoAmerica()">Enviar mis respuestas</button>
-        </div> -->
+            <button id="enviar2" onclick="resultadoEuropa()">Enviar mis respuestas</button>
+        </div>
 
     </div>
+
+    <!-- Página de resultados y opción de reinicio -->
 
 
     <div id="resultados">
