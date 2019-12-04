@@ -124,3 +124,53 @@ select#canada {
     color: #FF009E;
     background-color: #56F89A;
 }
+
+#preguntasEuropa {
+    margin-top: 5%;
+    font-family: verdana;
+    text-align: center;
+}
+
+select#alemania {
+    font-family: verdana;
+    color: #FF009E;
+    background-color: #56F89A;
+}
+
+select#suecia {
+    font-family: verdana;
+    color: #FF009E;
+    background-color: #56F89A;
+}
+
+select#francia {
+    font-family: verdana;
+    color: #FF009E;
+    background-color: #56F89A;
+}
+
+#enviarRespuestasEuropa {
+    display: inline-block;
+    text-align: center;
+}
+
+#enviar2 {
+    background-color: #56F89A;
+    border: none;
+    border-radius: 12px;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    font-family: verdana;
+}
+
+#resultados {
+    margin-top: 20%;
+    display: inline-block;
+    text-align: center;
+    font-family: verdana;
+}

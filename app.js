@@ -82,6 +82,9 @@ function resultadoEuropa() {
     preguntasEuropa.style.display = 'none';
     resultados.style.display = 'block';
     puntaje.innerHTML = numCorrectE
+    pregEuropaUno.value = "reinicio";
+    pregEuropaDos.value = "reinicio";
+    pregEuropaTres.value = "reinicio";
 }
 
 function reiniciar() {
