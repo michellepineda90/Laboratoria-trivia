@@ -8,6 +8,7 @@
     <title>Trivia Geográfica</title>
 
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="js/cssrefresh.js"></script>
 
 </head>
 
@@ -51,6 +52,13 @@
             <option value="correct">Ottawa</option>
             <option value="toronto">Toronto</option>
         </select>
+
+        <br>
+
+        <div id="enviarRespuestasAmerica">
+            <button id="enviar" onclick="resultadoAmerica()">Enviar mis respuestas</button>
+        </div>
+
     </div>
 
     <div id="preguntasEuropa">
@@ -60,13 +68,15 @@
             <option>Düsseldorf</option>
             <option>Berlin</option>
         </select>
+
+        <!-- <br>
+
+        <div id="enviarRespuestasAmerica">
+            <button type="reset" id="enviar" onclick="resultadoAmerica()">Enviar mis respuestas</button>
+        </div> -->
+
     </div>
 
-    <br>
-
-    <div id="enviarRespuestasAmerica">
-        <button id="enviar" onclick="resultadoAmerica()">Enviar mis respuestas</button>
-    </div>
 
     <div id="resultados">
         <h2>Tus puntaje es:</h2>
@@ -80,6 +90,3 @@
 </body>
 
 </html>
-
-<!-- Ocultar y mostrar en vez de linkear a otro html display: none -->
-<!-- Para centrar display: flex -->
