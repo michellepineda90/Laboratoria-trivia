@@ -44,11 +44,18 @@ function resultadoAmerica() {
     resultadosAmerica.push(pregAmericaTres.value);
 
     for (index = 0; index < resultadosAmerica.length; index++) {
-        numCorrect++;
-        console.log(numCorrect)
+        if (resultadosAmerica[index] == "correct") {
+            numCorrect++;
+            console.log(numCorrect)
+        };
     }
     enviarRespuestas.style.display = 'none';
     preguntasAmerica.style.display = 'none';
     resultados.style.display = 'block';
     puntaje.innerHTML = numCorrect
+}
+
+function reiniciar() {
+    bienvenida.style.display = 'block';
+    resultados.style.display = 'none';
 }
