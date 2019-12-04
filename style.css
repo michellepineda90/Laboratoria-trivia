@@ -25,7 +25,7 @@ body {
 
 #elige {
     text-align: center;
-    margin-top: 5%;
+    margin-top: 2.5%;
     font-family: verdana;
     font-size: 20px;
 }
@@ -80,4 +80,47 @@ input[type=text] {
 
 input#name {
     color: #FF009E;
+}
+
+#preguntasAmerica {
+    margin-top: 5%;
+    font-family: verdana;
+    text-align: center;
+}
+
+#enviarRespuestasAmerica {
+    display: inline-block;
+    text-align: center;
+}
+
+#enviar {
+    background-color: #56F89A;
+    border: none;
+    border-radius: 12px;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    font-family: verdana;
+}
+
+select#argentina {
+    font-family: verdana;
+    color: #FF009E;
+    background-color: #56F89A;
+}
+
+select#elsalvador {
+    font-family: verdana;
+    color: #FF009E;
+    background-color: #56F89A;
+}
+
+select#canada {
+    font-family: verdana;
+    color: #FF009E;
+    background-color: #56F89A;
 }

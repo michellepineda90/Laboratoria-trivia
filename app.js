@@ -16,13 +16,13 @@ const pregEuropaUno = document.getElementById('alemania');
 const pregEuropaDos = document.getElementById('suecia');
 const pregEuropaTres = document.getElementById('francia');
 const resultados = document.getElementById('resultados');
+const name = document.getElementById('name');
 resultados.style.display = 'none';
 
 function siguiente() {
     // Pasa de la página de inicio a página de saludo y elección
-    const name = document.getElementById('name').value;
     const saludo = document.getElementById('saludo');
-    saludo.innerHTML = '¡Hola, ' + name + '!';
+    saludo.innerHTML = '¡Hola, ' + name.value + '!';
     bienvenida.style.display = 'none';
     elige.style.display = 'block';
 }
@@ -59,7 +59,10 @@ function resultadoAmerica() {
     enviarRespuestas.style.display = 'none';
     preguntasAmerica.style.display = 'none';
     resultados.style.display = 'block';
-    puntaje.innerHTML = numCorrect
+    puntaje.innerHTML = numCorrect;
+    pregAmericaUno.value = "reinicio";
+    pregAmericaDos.value = "reinicio";
+    pregAmericaTres.value = "reinicio";
 }
 
 function resultadoEuropa() {
@@ -85,4 +88,5 @@ function reiniciar() {
     // Reinicia el juego
     bienvenida.style.display = 'block';
     resultados.style.display = 'none';
+    name.value = "";
 }
