@@ -36,10 +36,19 @@ function escogerEuropa() {
     enviarRespuestas.style.display = 'block';
 }
 
-function resultado() {
-    if ((pregAmericaUno.value == "buenosaires") && (pregAmericaDos == "sansalvador") && (pregAmericaTres == "ottawa")) {
-        alert("Todas tus respuestas están correctas!")
-    } else {
-        alert("Oh no, inténtalo de nuevo")
+function resultadoAmerica() {
+    const resultadosAmerica = [];
+    let numCorrect = 0;
+    resultadosAmerica.push(pregAmericaUno.value);
+    resultadosAmerica.push(pregAmericaDos.value);
+    resultadosAmerica.push(pregAmericaTres.value);
+
+    for (index = 0; index < resultadosAmerica.length; index++) {
+        numCorrect++;
+        console.log(numCorrect)
     }
+    enviarRespuestas.style.display = 'none';
+    preguntasAmerica.style.display = 'none';
+    resultados.style.display = 'block';
+    puntaje.innerHTML = numCorrect
 }

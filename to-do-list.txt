@@ -1,0 +1,6 @@
+To do:
+Pantallas: HTML, CSS
+Lógica de JS: resultados 
+
+Plus:
+cronómetro, random selection, musiquita e imágenes chivas, mostrar puntajes anteriores
