@@ -19,7 +19,7 @@
     <div id="bienvenida" class="ocultar">
         <h1>¡Bienvenidx a Trivia Geográfica!</h1>
         <p class="averiguemos">Averigüemos qué tan buenx eres en geografía...</p>
-        <input type="text" id="name" placeholder="Escribe tu nombre" name="name" required/>
+        <input type="text" id="name" placeholder="Escribe tu nombre" name="name">
         <button class="button" onclick="siguiente()">Empezar</button>
     </div>
 
@@ -111,10 +111,9 @@
 
 
     <div id="resultados">
-        <h2>Tu puntaje es:</h2>
         <p id="puntaje"></p>
         <!-- <img  -->
-        <button onclick="reiniciar()">¿Quieres intentarlo de nuevo?</button>
+        <button id="final" onclick="reiniciar()">¿Quieres intentarlo de nuevo?</button>
     </div>
 
     <script src="app.js"></script>

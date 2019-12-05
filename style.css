@@ -205,8 +205,23 @@ select#francia {
 }
 
 #resultados {
-    margin-top: 20%;
+    margin-top: 10%;
     display: inline-block;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+}
+
+#final {
+    background-color: #56F89A;
+    border: none;
+    border-radius: 12px;
+    color: #000000;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
     font-family: 'Open Sans', sans-serif;
 }

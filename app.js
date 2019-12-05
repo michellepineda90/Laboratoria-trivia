@@ -81,7 +81,7 @@ function resultadoEuropa() {
     enviarRespuestas.style.display = 'none';
     preguntasEuropa.style.display = 'none';
     resultados.style.display = 'block';
-    puntaje.innerHTML = numCorrectE
+    puntaje.innerHTML = "Respuestas correctas: " + numCorrectE + "\nRespuestas incorrectas: " + (3 - numCorrectE);
     pregEuropaUno.value = "reinicio";
     pregEuropaDos.value = "reinicio";
     pregEuropaTres.value = "reinicio";
