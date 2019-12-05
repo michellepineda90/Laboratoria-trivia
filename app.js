@@ -9,6 +9,7 @@ const preguntasEuropa = document.getElementById('preguntasEuropa');
 preguntasEuropa.style.display = 'none';
 const enviarRespuestas = document.getElementById('enviar');
 enviarRespuestas.style.display = 'none';
+const p1 = document.getElementById('p1');
 const pregAmericaUno = document.getElementById('argentina');
 const pregAmericaDos = document.getElementById('elsalvador');
 const pregAmericaTres = document.getElementById('canada');
@@ -30,17 +31,27 @@ function siguiente() {
 function escogerAmerica() {
     // Pasa a la página de preguntas sobre América
     elige.style.display = 'none';
-    preguntasAmerica.style.display = 'block';
+    pregAmericaUno.value = "reinicio";
+    pregAmericaDos.value = "reinicio";
+    pregAmericaTres.value = "reinicio";
+    preguntasAmerica.style.display = "block";
     preguntasEuropa.style.display = 'none';
     enviarRespuestas.style.display = 'block';
+    resultados.style.display = 'none';
+    name.value = "";
 }
 
 function escogerEuropa() {
     // Pasa a la página de preguntas sobre Europa
     elige.style.display = 'none';
+    pregEuropaUno.value = "reinicio";
+    pregEuropaDos.value = "reinicio";
+    pregEuropaTres.value = "reinicio";
     preguntasAmerica.style.display = 'none';
     preguntasEuropa.style.display = 'block';
     enviarRespuestas.style.display = 'block';
+    resultados.style.display = 'none';
+    name.value = "";
 }
 
 function resultadoAmerica() {
@@ -59,10 +70,8 @@ function resultadoAmerica() {
     enviarRespuestas.style.display = 'none';
     preguntasAmerica.style.display = 'none';
     resultados.style.display = 'block';
-    puntaje.innerHTML = numCorrect;
-    pregAmericaUno.value = "reinicio";
-    pregAmericaDos.value = "reinicio";
-    pregAmericaTres.value = "reinicio";
+    puntaje.innerHTML = "Respuestas correctas: " + numCorrect;
+    incorrectas.innerHTML = "Respuestas incorrectas: " + (3 - numCorrect);
 }
 
 function resultadoEuropa() {
@@ -81,10 +90,8 @@ function resultadoEuropa() {
     enviarRespuestas.style.display = 'none';
     preguntasEuropa.style.display = 'none';
     resultados.style.display = 'block';
-    puntaje.innerHTML = "Respuestas correctas: " + numCorrectE + "\nRespuestas incorrectas: " + (3 - numCorrectE);
-    pregEuropaUno.value = "reinicio";
-    pregEuropaDos.value = "reinicio";
-    pregEuropaTres.value = "reinicio";
+    puntaje.innerHTML = "Respuestas correctas: " + numCorrectE;
+    incorrectas.innerHTML = "Respuestas incorrectas: " + (3 - numCorrectE);
 }
 
 function reiniciar() {

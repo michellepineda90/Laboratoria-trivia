@@ -36,14 +36,16 @@
     <!-- Página de preguntas América -->
 
     <div id="preguntasAmerica">
-        <h3>¿Cuál es la capital de Argentina?</h3>
-        <select id="argentina">
-                <option disabled selected value="reinicio">Selecciona una opción</option>
-                <option value="correct">Buenos Aires</option>
-                <option value="mendoza">Mendoza</option>
-                <option value="cordoba">Córdoba</option>
-        </select>
-        <br>
+        <div id="p1">
+            <h3>¿Cuál es la capital de Argentina?</h3>
+            <select id="argentina">
+                    <option disabled selected value="reinicio">Selecciona una opción</option>
+                    <option value="correct">Buenos Aires</option>
+                    <option value="mendoza">Mendoza</option>
+                    <option value="cordoba">Córdoba</option>
+            </select>
+            <br>
+        </div>
 
         <h3>¿Cuál es la capital de El Salvador?</h3>
         <select id="elsalvador">
@@ -107,13 +109,14 @@
 
     </div>
 
-    <!-- Página de resultados y opción de reinicio -->
+    <!-- Página de resultados y volver a jugar -->
 
 
     <div id="resultados">
         <p id="puntaje"></p>
-        <!-- <img  -->
-        <button id="final" onclick="reiniciar()">¿Quieres intentarlo de nuevo?</button>
+        <p id="incorrectas"></p>
+        <button id="america" onclick="escogerAmerica()">Capitales de América</button> &nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="europa" onclick="escogerEuropa()">Capitales de Europa</button>
     </div>
 
     <script src="app.js"></script>
