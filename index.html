@@ -8,6 +8,7 @@
     <title>Trivia Geográfica</title>
 
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <script type="text/javascript" src="js/cssrefresh.js"></script>
 
 </head>
@@ -18,7 +19,7 @@
     <div id="bienvenida" class="ocultar">
         <h1>¡Bienvenidx a Trivia Geográfica!</h1>
         <p class="averiguemos">Averigüemos qué tan buenx eres en geografía...</p>
-        <input type="text" id="name" placeholder="Escribe tu nombre aquí" name="name" required/>
+        <input type="text" id="name" placeholder="Escribe tu nombre" name="name" required/>
         <button class="button" onclick="siguiente()">Empezar</button>
     </div>
 
@@ -28,7 +29,6 @@
         <h2 id="saludo"></h2>
         <img src="img/tierragif.gif">
         <p>Elige un camino...</p>
-        <br>
         <button id="america" onclick="escogerAmerica()">Capitales de América</button> &nbsp;&nbsp;&nbsp;&nbsp;
         <button id="europa" onclick="escogerEuropa()">Capitales de Europa</button>
     </div>
@@ -37,27 +37,24 @@
 
     <div id="preguntasAmerica">
         <h3>¿Cuál es la capital de Argentina?</h3>
-        <br>
         <select id="argentina">
                 <option disabled selected value="reinicio">Selecciona una opción</option>
                 <option value="correct">Buenos Aires</option>
                 <option value="mendoza">Mendoza</option>
                 <option value="cordoba">Córdoba</option>
         </select>
-        <br><br>
+        <br>
 
         <h3>¿Cuál es la capital de El Salvador?</h3>
-        <br>
         <select id="elsalvador">
             <option disabled selected value="reinicio">Selecciona una opción</option> 
             <option value="santaana">Santa Ana</option>
             <option value="sanmiguel">San Miguel</option>
             <option value ="correct">San Salvador</option>
         </select>
-        <br><br>
+        <br>
 
         <h3>¿Cuál es la capital de Canadá?</h3>
-        <br>
         <select id="canada">
             <option disabled selected value="reinicio">Selecciona una opción</option>
             <option value="ontario">Ontario</option>
@@ -65,7 +62,7 @@
             <option value="toronto">Toronto</option>
         </select>
 
-        <br><br><br><br><br>
+        <br><br><br>
 
         <div id="enviarRespuestasAmerica">
             <button id="enviar" onclick="resultadoAmerica()">Enviar mis respuestas</button>
@@ -77,27 +74,24 @@
 
     <div id="preguntasEuropa">
         <h3>¿Cuál es la capital de Alemania?</h3>
-        <br>
         <select id="alemania">
             <option disabled selected value="reinicio">Selecciona una opción</option>
             <option value="kreuzberg">Kreuzberg</option>
             <option value="dusseldorf">Düsseldorf</option>
             <option value="correct">Berlín</option>
         </select>
-        <br><br>
+        <br>
 
         <h3>¿Cuál es la capital de Suecia?</h3>
-        <br>
         <select id="suecia">
             <option disabled selected value="reinicio">Selecciona una opción</option>
             <option value="malmo">Malmö</option>
             <option value="correct">Estocolmo</option>
             <option value="gothenburg">Gothenburg</option>
         </select>
-        <br><br>
+        <br>
 
         <h3>¿Cuál es la capital de Francia?</h3>
-        <br>
         <select id="francia">
             <option disabled selected value="reinicio">Selecciona una opción</option>
             <option value="correct">París</option>
@@ -105,7 +99,7 @@
             <option value="marsella">Marsella</option>
         </select>
 
-        <br><br><br><br><br>
+        <br><br><br>
 
         <div id="enviarRespuestasEuropa">
             <button id="enviar2" onclick="resultadoEuropa()">Enviar mis respuestas</button>
@@ -117,7 +111,7 @@
 
 
     <div id="resultados">
-        <h2>Tus puntaje es:</h2>
+        <h2>Tu puntaje es:</h2>
         <p id="puntaje"></p>
         <!-- <img  -->
         <button onclick="reiniciar()">¿Quieres intentarlo de nuevo?</button>

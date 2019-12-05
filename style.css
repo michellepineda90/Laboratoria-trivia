@@ -13,25 +13,39 @@ body {
 
 .ocultar {
     text-align: center;
-    font-family: verdana;
+    font-family: 'Open Sans', sans-serif;
     font-size: 35px;
     margin-top: 15%;
 }
 
 .averiguemos {
-    font-size: 20px;
+    font-size: 25px;
     color: #FF009E;
+}
+
+#name {
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    background-color: #56F89A;
 }
 
 #elige {
     text-align: center;
-    margin-top: 2.5%;
-    font-family: verdana;
-    font-size: 20px;
+}
+
+h2#saludo {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    margin-top: 5%;
+    margin-bottom: 0%;
 }
 
 #elige p {
     color: #FF009E;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    margin-top: 0;
 }
 
 #elige button {
@@ -39,58 +53,61 @@ body {
     border: none;
     border-radius: 12px;
     color: #000000;
-    padding: 20px;
+    padding: 15px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    font-family: verdana;
+    font-family: 'Open Sans', sans-serif;
 }
 
 img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2.5%;
+    margin: auto;
+    padding: 0;
     width: 25%;
 }
 
 .button {
     background-color: #56F89A;
-    border: none;
     border-radius: 12px;
+    border: none;
     color: #000000;
-    padding: 20px;
+    padding: 13px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    font-family: verdana;
+    margin: 4px 4px;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 input[type=text] {
-    border: 4px solid #56F89A;
-    border-radius: 4px;
-    width: 20%;
-    font-family: verdana;
-    background-color: #e0e0e0;
+    border-radius: 12px;
+    border: solid #56F89A;
+    padding: 10px 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    background-color: white;
+    font-size: 15px;
 }
 
-input#name {
-    color: #FF009E;
+::placeholder {
+    color: #000000;
 }
 
 #preguntasAmerica {
     margin-top: 5%;
-    font-family: verdana;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
     text-align: center;
 }
 
 #enviarRespuestasAmerica {
     display: inline-block;
     text-align: center;
+    margin-top: 0;
 }
 
 #enviar {
@@ -98,55 +115,74 @@ input#name {
     border: none;
     border-radius: 12px;
     color: #000000;
-    padding: 20px;
+    padding: 10px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    font-family: verdana;
+    font-family: 'Open Sans', sans-serif;
 }
 
 select#argentina {
-    font-family: verdana;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
     color: #FF009E;
+    border-radius: 8px;
     background-color: #56F89A;
+    width: 20%;
 }
 
 select#elsalvador {
-    font-family: verdana;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
     color: #FF009E;
+    border-radius: 8px;
     background-color: #56F89A;
+    width: 20%;
 }
 
 select#canada {
-    font-family: verdana;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
     color: #FF009E;
+    border-radius: 8px;
     background-color: #56F89A;
+    width: 20%;
 }
 
 #preguntasEuropa {
     margin-top: 5%;
-    font-family: verdana;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
     text-align: center;
 }
 
 select#alemania {
-    font-family: verdana;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
     color: #FF009E;
+    border-radius: 8px;
     background-color: #56F89A;
+    width: 20%;
 }
 
 select#suecia {
-    font-family: verdana;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
     color: #FF009E;
+    border-radius: 8px;
     background-color: #56F89A;
+    width: 20%;
 }
 
 select#francia {
-    font-family: verdana;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
     color: #FF009E;
+    border-radius: 8px;
     background-color: #56F89A;
+    width: 20%;
 }
 
 #enviarRespuestasEuropa {
@@ -159,18 +195,18 @@ select#francia {
     border: none;
     border-radius: 12px;
     color: #000000;
-    padding: 20px;
+    padding: 10px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    font-family: verdana;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #resultados {
     margin-top: 20%;
     display: inline-block;
     text-align: center;
-    font-family: verdana;
+    font-family: 'Open Sans', sans-serif;
 }
