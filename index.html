@@ -7,8 +7,8 @@
 
     <title>Trivia Geográfica</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
     <script type="text/javascript" src="js/cssrefresh.js"></script>
 
 </head>
@@ -20,7 +20,7 @@
         <h1>¡Bienvenidx a Trivia Geográfica!</h1>
         <p class="averiguemos">Averigüemos qué tan buenx eres en geografía...</p>
         <input type="text" id="name" placeholder="Escribe tu nombre" name="name">
-        <button class="button" onclick="siguiente()">Empezar</button>
+        <button class="button" id="myBtn" onclick="siguiente()">Empezar</button>
     </div>
 
     <!-- Página de elección -->
@@ -120,6 +120,16 @@
     </div>
 
     <script src="app.js"></script>
+
+    <script>
+        let input = document.getElementById("name");
+        input.addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("myBtn").click();
+            }
+        });
+    </script>
 
 </body>
 
