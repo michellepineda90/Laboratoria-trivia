@@ -9,7 +9,6 @@ const preguntasEuropa = document.getElementById('preguntasEuropa');
 preguntasEuropa.style.display = 'none';
 const enviarRespuestas = document.getElementById('enviar');
 enviarRespuestas.style.display = 'none';
-const p1 = document.getElementById('p1');
 const pregAmericaUno = document.getElementById('argentina');
 const pregAmericaDos = document.getElementById('elsalvador');
 const pregAmericaTres = document.getElementById('canada');
@@ -23,7 +22,7 @@ resultados.style.display = 'none';
 function siguiente() {
     // Pasa de la página de inicio a página de saludo y elección
     const saludo = document.getElementById('saludo');
-    saludo.innerHTML = '¡Hola, ' + name.value + '!';
+    saludo.innerText = '¡Hola, ' + name.value + '!';
     bienvenida.style.display = 'none';
     elige.style.display = 'block';
 }
@@ -57,33 +56,36 @@ function escogerEuropa() {
 function resultadoAmerica() {
     // Obtiene el puntaje de las preguntas sobre América
     const resultadosAmerica = [];
+    const correctasAmerica = ["buenos-aires", "san-salvador", "ottawa"];
     let numCorrect = 0;
     resultadosAmerica.push(pregAmericaUno.value);
     resultadosAmerica.push(pregAmericaDos.value);
     resultadosAmerica.push(pregAmericaTres.value);
 
-    for (index = 0; index < resultadosAmerica.length; index++) {
-        if (resultadosAmerica[index] == "correct") {
+    for (let index = 0; index < resultadosAmerica.length; index++) {
+        if (resultadosAmerica[index] == correctasAmerica[index]) {
             numCorrect++;
         };
     }
+
     enviarRespuestas.style.display = 'none';
     preguntasAmerica.style.display = 'none';
     resultados.style.display = 'block';
-    puntaje.innerHTML = "Respuestas correctas: " + numCorrect;
-    incorrectas.innerHTML = "Respuestas incorrectas: " + (3 - numCorrect);
+    puntaje.innerText = "Respuestas correctas: " + numCorrect;
+    incorrectas.innerText = "Respuestas incorrectas: " + (3 - numCorrect);
 }
 
 function resultadoEuropa() {
     // Obtiene el puntaje de las preguntas sobre Europa
     const resultadosEuropa = [];
+    const correctasEuropa = ["berlin", "estocolmo", "paris"];
     let numCorrectE = 0;
     resultadosEuropa.push(pregEuropaUno.value);
     resultadosEuropa.push(pregEuropaDos.value);
     resultadosEuropa.push(pregEuropaTres.value);
 
-    for (index = 0; index < resultadosEuropa.length; index++) {
-        if (resultadosEuropa[index] == "correct") {
+    for (let index = 0; index < resultadosEuropa.length; index++) {
+        if (resultadosEuropa[index] == correctasEuropa[index]) {
             numCorrectE++;
         };
     }
@@ -92,11 +94,4 @@ function resultadoEuropa() {
     resultados.style.display = 'block';
     puntaje.innerHTML = "Respuestas correctas: " + numCorrectE;
     incorrectas.innerHTML = "Respuestas incorrectas: " + (3 - numCorrectE);
-}
-
-function reiniciar() {
-    // Reinicia el juego
-    bienvenida.style.display = 'block';
-    resultados.style.display = 'none';
-    name.value = "";
 }
