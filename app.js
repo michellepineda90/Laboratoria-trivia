@@ -95,3 +95,25 @@ function resultadoEuropa() {
     puntaje.innerHTML = "Respuestas correctas: " + numCorrectE;
     incorrectas.innerHTML = "Respuestas incorrectas: " + (3 - numCorrectE);
 }
+
+/* 
+Tried to add a simple countdown timer with just minutes and seconds for the trivia. Allotted time: 1 minute
+endDate not correct
+
+const endDate = new Date("Feb 30, 2020 12:00: 00").getTime();
+let timer = setInterval(function()) {
+        let now = new Date().getTime();
+        let t = endDate - now;
+        if (t >= 0) {
+            let mins = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+            let secs = Math.floor((t % (1000 * 60)) / 1000);
+
+            document.getElementbyId("timer-mins").innerHTML = ("0" + mins).slice(-2) +
+                "<span class ='label'>MIN(S)</span>";
+            document.getElementbyId("timer-secs").innerHTML = ("0" + secs).slice(-2) +
+                "<span class ='label'>SEC(S)</span>";
+        } else {
+            document.getElementById("timer").innerHTML = "Te quedaste sin tiempo!"
+        }
+     },
+     1000);  */

@@ -11,6 +11,19 @@ body {
     background: #FFE521;
 }
 
+
+/* .container {
+    Style for timer div
+    background: #FF009E;
+    width: 20%;
+    height: 20%;
+}
+
+#timer {
+    color: #666;
+    font-size: 10px;
+} */
+
 .ocultar {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
